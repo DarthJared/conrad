@@ -1,0 +1,58 @@
+.input-wrapper {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+}
+
+.input {
+  width: 400px;
+  height: 100px;
+  margin-left: calc(50% - 200px);
+  display: none;
+}
+
+.conversation-log {
+  width: 500px;
+  min-height: 200px;
+}
+
+.listening {
+  border: solid 3px blue;
+}
+
+.activate {
+  display: inline-block;
+  font-family: monaco, monospace;
+  padding: 20px 60px;
+  margin-left: calc(50% - 132px);
+  background-color: #111670;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.activate:hover {
+  background-color: #0a0d4a;
+}
+
+.activate:active {
+  background-color: #06083b;
+  transform: translateY(3px);
+}
+
+.visualizer-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.dev-mode{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100px;
+}

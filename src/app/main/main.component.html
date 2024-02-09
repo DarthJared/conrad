@@ -1,0 +1,13 @@
+<div class="conversation-log" *ngIf="devMode" [ngClass]="{'listening': listening}">
+  <app-interaction-bubble *ngFor="let interaction of interactions" [isConrad]="interaction.isConrad" [text]="interaction.text" >
+  </app-interaction-bubble>
+</div>
+<div class="visualizer-wrapper">
+  <app-visualizer [listening]="listening" [speaking]="speaking"></app-visualizer>
+</div>
+<div class="input-wrapper">
+  <textarea class="input" placeholder="How can I help you, Sir?" (keyup.enter)="submitCommand()" [(ngModel)]="commandText">
+  </textarea>
+  <div class="activate" (click)="submitCommand()">Activate Conrad</div>
+</div>
+<div class="dev-mode" (click)="devMode = !devMode"></div>

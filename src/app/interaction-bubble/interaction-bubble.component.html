@@ -1,0 +1,5 @@
+<div class="bubble-wrapper" [ngClass]="{'master-bubble-wrapper': !isConrad}">
+  <div class="bubble" [ngClass]="{'conrad-bubble': isConrad, 'master-bubble': !isConrad}">
+    {{text}}
+  </div>
+</div>
