@@ -78,7 +78,6 @@ export class MainComponent {
       this.changeDetector.detectChanges();
     }
     recognition.onresult = (event: any) => {
-      console.log(event)
       this.commandText = event.results[0][0].transcript;
       this.submitCommand();
     }
